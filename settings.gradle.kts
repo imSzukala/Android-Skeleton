@@ -1,1 +1,1 @@
-include(Config.Module.app)
+include(Modules.app)

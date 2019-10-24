@@ -1,55 +1,99 @@
 plugins {
-    id(Plugins.Build.androidApplication)
-    kotlin(Plugins.Build.kotlinAndroid)
-    kotlin(Plugins.Build.kotlinAndroidExtensions)
+    id(Plugins.androidApplication)
+    kotlin(Plugins.android)
+    kotlin(Plugins.androidExtensions)
+    kotlin(Plugins.kapt)
+    id(Plugins.safeArgs)
+    id(Plugins.jUnit5)
 }
 
 android {
-    compileSdkVersion(Versions.App.compileSdk)
+    compileSdkVersion(Versions.compileSdk)
+
     defaultConfig {
-        applicationId = Config.Application.applicationId
-        minSdkVersion(Versions.App.minSdk)
-        targetSdkVersion(Versions.App.targetSdk)
-        versionCode = Versions.App.versionCode
-        versionName = Versions.App.versionName
-        testInstrumentationRunner = Plugins.Test.instrumentationRunner
+        applicationId = Config.applicationId
+        minSdkVersion(Versions.minSdk)
+        targetSdkVersion(Versions.targetSdk)
+        versionCode = Versions.versionCode
+        versionName = Versions.versionName
+        testInstrumentationRunner = Plugins.instrumentationRunner
+        testInstrumentationRunnerArgument(Plugins.jUnit5Argument, Plugins.jUnit5Builder)
     }
+
     buildTypes {
-        getByName(Config.BuildType.debug) {
+        getByName(Config.debug) {
             isDebuggable = true
-            applicationIdSuffix = ".${Config.BuildType.debug}"
-            versionNameSuffix = "-${Config.BuildType.debug}"
+            applicationIdSuffix = ".${Config.debug}"
+            versionNameSuffix = "-${Config.debug}"
         }
-        getByName(Config.BuildType.release) {
+        getByName(Config.release) {
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
-        create(Config.BuildType.dev) {
-            initWith(getByName(Config.BuildType.release))
-            applicationIdSuffix = ".${Config.BuildType.dev}"
-            versionNameSuffix = "-${Config.BuildType.dev}"
+        create(Config.dev) {
+            initWith(getByName(Config.release))
+            applicationIdSuffix = ".${Config.dev}"
+            versionNameSuffix = "-${Config.dev}"
         }
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    packagingOptions {
+        exclude("META-INF/LICENSE*")
     }
 }
 
 dependencies {
     // Jar files
-    implementation(fileTree(Dependencies.General.jarFiles))
+    implementation(fileTree(Dependencies.jarFiles))
 
     // Kotlin
-    implementation(Dependencies.Kotlin.stdLib)
-    implementation(Dependencies.Kotlin.ktx)
-    implementation(Dependencies.Kotlin.coroutines)
-    implementation(Dependencies.Kotlin.coroutinesAndroid)
+    implementation(kotlin(Dependencies.stdLib, Versions.kotlin))
+    implementation(Dependencies.coroutines)
+    implementation(Dependencies.coroutinesAndroid)
 
-    // Android
-    implementation(Dependencies.Android.appCompat)
+    // AndroidX
+    implementation(Dependencies.core)
+    implementation(Dependencies.appCompat)
+    implementation(Dependencies.constraintLayout)
 
-    // Test
-    testImplementation(Dependencies.Test.jUnit4)
-    androidTestImplementation(Dependencies.Test.espressoCore)
+    // Navigation
+    implementation(Dependencies.navigationFragment)
+    implementation(Dependencies.navigationUi)
 
-    // Ui
-    implementation(Dependencies.Ui.constraintLayout)
+    // Lifecycle
+    implementation(Dependencies.viewModel)
+    implementation(Dependencies.liveData)
+
+    // Di
+    implementation(Dependencies.koinAndroid)
+    implementation(Dependencies.koinViewModel)
+
+    // Networking
+    implementation(Dependencies.moshi)
+    kapt(Dependencies.moshiKotlinCodeGen)
+    implementation(Dependencies.okHttp)
+    implementation(Dependencies.okHttpLogger)
+    implementation(Dependencies.retrofit)
+    implementation(Dependencies.retrofitMoshi)
+
+    // Unit Testing
+    testImplementation(Dependencies.jUnit5)
+    testImplementation(Dependencies.jUnit5Params)
+    testRuntimeOnly(Dependencies.jUnit5Engine)
+    testImplementation(Dependencies.liveDataTest)
+    testImplementation(Dependencies.koinTest)
+    testImplementation(Dependencies.mockK)
+
+    // Instrumentation Testing
+    androidTestImplementation(Dependencies.espressoCore)
+    androidTestImplementation(Dependencies.testRunner)
+    androidTestImplementation(Dependencies.jUnit5)
+    androidTestImplementation(Dependencies.jUnit5Core)
+    androidTestRuntimeOnly(Dependencies.jUnit5Runner)
 }
