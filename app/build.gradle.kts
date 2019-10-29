@@ -49,6 +49,11 @@ android {
 }
 
 dependencies {
+
+    // Project modules
+    implementation(project(Modules.domain))
+    implementation(project(Modules.data))
+
     // Jar files
     implementation(fileTree(Dependencies.jarFiles))
 
@@ -81,6 +86,11 @@ dependencies {
     implementation(Dependencies.okHttpLogger)
     implementation(Dependencies.retrofit)
     implementation(Dependencies.retrofitMoshi)
+
+    // Room
+    implementation(Dependencies.room)
+    kapt(Dependencies.roomCompiler)
+    implementation(Dependencies.roomKtx)
 
     // Unit Testing
     testImplementation(Dependencies.jUnit5)

@@ -1,1 +1,5 @@
-include(Modules.app)
+include(
+    Modules.app,
+    Modules.data,
+    Modules.domain
+)
