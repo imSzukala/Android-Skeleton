@@ -45,6 +45,11 @@ object Dependencies {
     const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
     const val retrofitMoshi = "com.squareup.retrofit2:converter-moshi:${Versions.retrofit}"
 
+    // Debug tools
+    const val leakCanary = "com.squareup.leakcanary:leakcanary-android:${Versions.leakCanary}"
+    const val stetho = "com.facebook.stetho:stetho:${Versions.stetho}"
+    const val stethoOkHttp = "com.facebook.stetho:stetho-okhttp3:${Versions.stetho}"
+
     // Unit Testing
     const val jUnit5 = "org.junit.jupiter:junit-jupiter-api:${Versions.jUnit5}"
     const val jUnit5Params = "org.junit.jupiter:junit-jupiter-params:${Versions.jUnit5}"

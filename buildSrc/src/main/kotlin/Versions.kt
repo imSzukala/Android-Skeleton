@@ -43,6 +43,10 @@ object Versions {
     const val okHttp = "4.2.1"
     const val retrofit = "2.6.1"
 
+    // Debug tools
+    const val leakCanary = "2.0-beta-3"
+    const val stetho = "1.5.1"
+
     // Unit Testing
     const val jUnit5 = "5.5.2"
     const val coreTest = "2.1.0"

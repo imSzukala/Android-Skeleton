@@ -92,6 +92,10 @@ dependencies {
     kapt(Dependencies.roomCompiler)
     implementation(Dependencies.roomKtx)
 
+    // Debug tools
+    implementation(Dependencies.stetho)
+    debugImplementation(Dependencies.leakCanary)
+
     // Unit Testing
     testImplementation(Dependencies.jUnit5)
     testImplementation(Dependencies.jUnit5Params)
