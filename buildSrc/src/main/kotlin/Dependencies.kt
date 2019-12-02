@@ -16,6 +16,10 @@ object Dependencies {
     const val recyclerView = "androidx.recyclerview:recyclerview:${Versions.recyclerView}"
     const val cardView = "androidx.cardview:cardview:${Versions.cardView}"
 
+    // Ui
+    const val material = "com.google.android.material:material:${Versions.material}"
+    const val lottie = "com.airbnb.android:lottie:${Versions.lottie}"
+
     // Room
     const val room = "androidx.room:room-runtime:${Versions.room}"
     const val roomCompiler = "androidx.room:room-compiler:${Versions.room}"
@@ -49,6 +53,12 @@ object Dependencies {
     const val leakCanary = "com.squareup.leakcanary:leakcanary-android:${Versions.leakCanary}"
     const val stetho = "com.facebook.stetho:stetho:${Versions.stetho}"
     const val stethoOkHttp = "com.facebook.stetho:stetho-okhttp3:${Versions.stetho}"
+
+    // Permissions
+    const val easyPermissions = "pub.devrel:easypermissions:${Versions.easyPermissions}"
+
+    // Time
+    const val threeTen = "com.jakewharton.threetenabp:threetenabp:${Versions.threeTen}"
 
     // Unit Testing
     const val jUnit5 = "org.junit.jupiter:junit-jupiter-api:${Versions.jUnit5}"

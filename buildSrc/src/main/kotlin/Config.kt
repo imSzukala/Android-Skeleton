@@ -7,4 +7,8 @@ object Config {
     const val debug = "debug"
     const val dev = "dev"
     const val release = "release"
+
+    // File paths
+    const val debugKeyStore = "config/debug.keystore"
+    const val ktlintGradle = "config/ktlint.gradle.kts"
 }

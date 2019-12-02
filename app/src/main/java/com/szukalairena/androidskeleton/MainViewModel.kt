@@ -1,3 +1,1 @@
 package com.szukalairena.androidskeleton
-
-

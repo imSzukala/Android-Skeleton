@@ -21,4 +21,8 @@ object Plugins {
     const val jUnit5 = "de.mannodermaus.android-junit5"
     const val jUnit5Builder = "de.mannodermaus.junit5.AndroidJUnit5Builder"
     const val jUnit5Argument = "runnerBuilder"
+
+    // Quality
+    const val ktlint = "com.pinterest:ktlint:${Versions.ktlint}"
+    const val gradleVersions = "com.github.ben-manes.versions"
 }

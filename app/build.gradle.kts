@@ -20,6 +20,13 @@ android {
         testInstrumentationRunnerArgument(Plugins.jUnit5Argument, Plugins.jUnit5Builder)
     }
 
+    // TODO Generate debug keystore
+    signingConfigs {
+        getByName(Config.debug) {
+            storeFile = rootProject.file(Config.debugKeyStore)
+        }
+    }
+
     buildTypes {
         getByName(Config.debug) {
             isDebuggable = true
@@ -35,6 +42,7 @@ android {
             initWith(getByName(Config.release))
             applicationIdSuffix = ".${Config.dev}"
             versionNameSuffix = "-${Config.dev}"
+            signingConfig = signingConfigs.getByName(Config.debug)
         }
     }
 
@@ -45,6 +53,10 @@ android {
 
     packagingOptions {
         exclude("META-INF/LICENSE*")
+    }
+
+    dataBinding {
+        isEnabled = true
     }
 }
 
@@ -67,6 +79,9 @@ dependencies {
     implementation(Dependencies.appCompat)
     implementation(Dependencies.constraintLayout)
 
+    // Ui
+    implementation(Dependencies.material)
+
     // Navigation
     implementation(Dependencies.navigationFragment)
     implementation(Dependencies.navigationUi)
@@ -78,19 +93,6 @@ dependencies {
     // Di
     implementation(Dependencies.koinAndroid)
     implementation(Dependencies.koinViewModel)
-
-    // Networking
-    implementation(Dependencies.moshi)
-    kapt(Dependencies.moshiKotlinCodeGen)
-    implementation(Dependencies.okHttp)
-    implementation(Dependencies.okHttpLogger)
-    implementation(Dependencies.retrofit)
-    implementation(Dependencies.retrofitMoshi)
-
-    // Room
-    implementation(Dependencies.room)
-    kapt(Dependencies.roomCompiler)
-    implementation(Dependencies.roomKtx)
 
     // Debug tools
     implementation(Dependencies.stetho)

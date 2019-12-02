@@ -1,3 +1,7 @@
+plugins {
+    id(Plugins.gradleVersions).version(Versions.gradleVersions)
+}
+
 buildscript {
     repositories {
         google()
@@ -14,6 +18,11 @@ buildscript {
 }
 
 allprojects {
+
+    apply {
+        from(rootProject.file(Config.ktlintGradle))
+    }
+
     repositories {
         google()
         jcenter()
