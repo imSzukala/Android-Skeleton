@@ -1,11 +1,138 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+    <!-- TODO customize style -->
+    <style name="AndroidSkeletonTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <!-- Color theming -->
+
+        <!-- Brand colors -->
+
+        <item name="colorPrimary">@color/color_electric_violet</item>
+        <item name="colorPrimaryVariant">@color/color_purple</item>
+        <item name="colorOnPrimary">@color/color_white</item>
+
+        <item name="colorSecondary">@color/color_robins_egg_blue</item>
+        <item name="colorSecondaryVariant">@color/color_teal</item>
+        <item name="colorOnSecondary">@color/color_black</item>
+
+        <!-- Additional colors -->
+
+        <item name="android:colorBackground">@color/color_background</item>
+        <item name="colorOnBackground">@color/color_on_background</item>
+
+        <item name="colorSurface">@color/color_surface</item>
+        <item name="colorOnSurface">@color/color_on_surface</item>
+
+        <item name="colorError">@color/color_red_violet</item>
+        <item name="colorOnError">@color/color_white</item>
+
+        <!-- By default points to colorPrimary in the Light theme and colorSurface in the Dark theme -->
+
+        <!-- <item name="colorPrimarySurface"></item> -->
+        <!-- <item name="colorOnPrimarySurface"></item> -->
+
+        <!-- Shape theming -->
+
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.AndroidSkeleton.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.AndroidSkeleton.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.AndroidSkeleton.LargeComponent</item>
+
+        <!-- Typography theming -->
+
+        <item name="textAppearanceHeadline1">@style/TextAppearance.AndroidSkeleton.Headline1</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.AndroidSkeleton.Headline2</item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.AndroidSkeleton.Headline3</item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.AndroidSkeleton.Headline4</item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.AndroidSkeleton.Headline5</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.AndroidSkeleton.Headline6</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.AndroidSkeleton.Subtitle1</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.AndroidSkeleton.Subtitle2</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.AndroidSkeleton.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.AndroidSkeleton.Body2</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.AndroidSkeleton.Caption</item>
+        <item name="textAppearanceButton">@style/TextAppearance.AndroidSkeleton.Button</item>
+        <item name="textAppearanceOverline">@style/TextAppearance.AndroidSkeleton.Overline</item>
+
+    </style>
+
+    <!-- Shape styles -->
+
+    <style name="ShapeAppearance.AndroidSkeleton.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">4dp</item>
+
+        <!-- It is possible to style top, bottom, right, left corners separately -->
+    </style>
+
+    <style name="ShapeAppearance.AndroidSkeleton.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="ShapeAppearance.AndroidSkeleton.LargeComponent" parent="ShapeAppearance.MaterialComponents.LargeComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">4dp</item>
+    </style>
+
+    <!-- Typography styles -->
+
+    <style name="TextAppearance.AndroidSkeleton.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="android:textSize">@dimen/text_size_headline1</item>
+
+        <!-- Additional attributes -->
+
+        <!-- <item name="fontFamily"></item> -->
+        <!-- <item name="android:textStyle"></item> -->
+        <!-- <item name="android:textAllCaps"></item> -->
+        <!-- <item name="android:letterSpacing"></item> -->
+    </style>
+
+    <style name="TextAppearance.AndroidSkeleton.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="android:textSize">@dimen/text_size_headline2</item>
+    </style>
+
+    <style name="TextAppearance.AndroidSkeleton.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="android:textSize">@dimen/text_size_headline3</item>
+    </style>
+
+    <style name="TextAppearance.AndroidSkeleton.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="android:textSize">@dimen/text_size_headline4</item>
+    </style>
+
+    <style name="TextAppearance.AndroidSkeleton.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:textSize">@dimen/text_size_headline5</item>
+    </style>
+
+    <style name="TextAppearance.AndroidSkeleton.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textSize">@dimen/text_size_headline6</item>
+    </style>
+
+    <style name="TextAppearance.AndroidSkeleton.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textSize">@dimen/text_size_subtitle1</item>
+    </style>
+
+    <style name="TextAppearance.AndroidSkeleton.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:textSize">@dimen/text_size_subtitle2</item>
+    </style>
+
+    <style name="TextAppearance.AndroidSkeleton.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textSize">@dimen/text_size_body1</item>
+    </style>
+
+    <style name="TextAppearance.AndroidSkeleton.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:textSize">@dimen/text_size_body2</item>
+    </style>
+
+    <style name="TextAppearance.AndroidSkeleton.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">@dimen/text_size_caption</item>
+    </style>
+
+    <style name="TextAppearance.AndroidSkeleton.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:textSize">@dimen/text_size_button</item>
+    </style>
+
+    <style name="TextAppearance.AndroidSkeleton.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="android:textSize">@dimen/text_size_overline</item>
     </style>
 
 </resources>

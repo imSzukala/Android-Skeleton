@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Dark theme -->
+
+    <color name="color_background">@color/color_black</color>
+    <color name="color_on_background">@color/color_white</color>
+    <color name="color_surface">@color/color_black</color>
+    <color name="color_on_surface">@color/color_white</color>
+
+</resources>

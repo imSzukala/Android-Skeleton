@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Margins -->
+
+    <dimen name="margin_smaller">2dp</dimen>
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_default">8dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_big">24dp</dimen>
+    <dimen name="margin_bigger">32dp</dimen>
+    <dimen name="margin_large">48dp</dimen>
+
+    <!-- Padding -->
+
+    <dimen name="padding_smaller">2dp</dimen>
+    <dimen name="padding_small">4dp</dimen>
+    <dimen name="padding_default">8dp</dimen>
+    <dimen name="padding_medium">16dp</dimen>
+    <dimen name="padding_big">24dp</dimen>
+    <dimen name="padding_bigger">32dp</dimen>
+    <dimen name="padding_large">48dp</dimen>
+
+    <!-- Text sizes -->
+
+    <dimen name="text_size_headline1">96sp</dimen>
+    <dimen name="text_size_headline2">60sp</dimen>
+    <dimen name="text_size_headline3">48sp</dimen>
+    <dimen name="text_size_headline4">34sp</dimen>
+    <dimen name="text_size_headline5">24sp</dimen>
+    <dimen name="text_size_headline6">20sp</dimen>
+    <dimen name="text_size_subtitle1">16sp</dimen>
+    <dimen name="text_size_subtitle2">14sp</dimen>
+    <dimen name="text_size_body1">16sp</dimen>
+    <dimen name="text_size_body2">14sp</dimen>
+    <dimen name="text_size_caption">12sp</dimen>
+    <dimen name="text_size_button">14sp</dimen>
+    <dimen name="text_size_overline">12sp</dimen>
+
+</resources>
