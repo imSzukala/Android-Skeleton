@@ -14,7 +14,6 @@ object Versions {
     const val targetSdk = 29
 
     // Build plugins
-    const val androidGradle = "3.5.1"
     const val jUnit5Gradle = "1.5.2.0"
 
     // Kotlin

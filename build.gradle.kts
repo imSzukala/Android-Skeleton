@@ -10,8 +10,6 @@ buildscript {
     }
 
     dependencies {
-        classpath(Plugins.androidGradlePlugin)
-        classpath(Plugins.kotlinGradlePlugin)
         classpath(Plugins.navigationSafeArgs)
         classpath(Plugins.jUnit5Gradle)
     }

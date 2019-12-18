@@ -1,5 +1,6 @@
 include(
     Modules.app,
     Modules.data,
-    Modules.domain
+    Modules.domain,
+    Modules.navigation
 )

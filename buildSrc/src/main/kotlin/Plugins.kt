@@ -3,13 +3,13 @@ object Plugins {
     // Build
     const val androidApplication = "com.android.application"
     const val androidLibrary = "com.android.library"
-    const val android = "android"
-    const val androidExtensions = "android.extensions"
-    const val kapt = "kapt"
+    const val android = "kotlin-android"
+    const val androidExtensions = "kotlin-android-extensions"
+    const val kapt = "kotlin-kapt"
 
-    // Gradle
-    const val androidGradlePlugin = "com.android.tools.build:gradle:${Versions.androidGradle}"
-    const val kotlinGradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin}"
+    const val baseAndroidPlugin = "com.szukalairena.androidskeleton.baseandroidplugin"
+    const val androidDependencies = "dependencies-android"
+    const val baseDependencies = "dependencies-base"
 
     // Navigation
     const val navigationSafeArgs = "androidx.navigation:navigation-safe-args-gradle-plugin:${Versions.navigation}"
