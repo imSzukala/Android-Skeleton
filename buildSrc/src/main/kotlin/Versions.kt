@@ -56,9 +56,6 @@ object Versions {
     // Permissions
     const val easyPermissions = "3.0.0"
 
-    // Time
-    const val threeTen = "1.2.1"
-
     // Unit Testing
     const val jUnit5 = "5.7.0"
     const val coreTest = "2.1.0"
@@ -72,4 +69,7 @@ object Versions {
     // Quality
     const val ktlint = "0.39.0"
     const val gradleVersions = "0.33.0"
+
+    // Desugaring
+    const val desugaring = "1.0.10"
 }

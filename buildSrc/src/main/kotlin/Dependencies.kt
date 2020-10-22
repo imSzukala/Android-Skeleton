@@ -57,9 +57,6 @@ object Dependencies {
     // Permissions
     const val easyPermissions = "pub.devrel:easypermissions:${Versions.easyPermissions}"
 
-    // Time
-    const val threeTen = "com.jakewharton.threetenabp:threetenabp:${Versions.threeTen}"
-
     // Unit Testing
     const val jUnit5 = "org.junit.jupiter:junit-jupiter-api:${Versions.jUnit5}"
     const val jUnit5Params = "org.junit.jupiter:junit-jupiter-params:${Versions.jUnit5}"
@@ -75,4 +72,7 @@ object Dependencies {
     const val testRunner = "androidx.test:runner:${Versions.testRunner}"
     const val jUnit5Core = "de.mannodermaus.junit5:android-test-core:${Versions.jUnit5Runner}"
     const val jUnit5Runner = "de.mannodermaus.junit5:android-test-runner:${Versions.jUnit5Runner}"
+
+    // Desugaring
+    const val desugaring = "com.android.tools:desugar_jdk_libs:${Versions.desugaring}"
 }

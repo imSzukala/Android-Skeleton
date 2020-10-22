@@ -11,4 +11,7 @@ object Config {
     // File paths
     const val debugKeyStore = "config/debug.keystore"
     const val ktlintGradle = "config/ktlint.gradle.kts"
+
+    // Desugaring
+    const val desugaringConfig = "coreLibraryDesugaring"
 }

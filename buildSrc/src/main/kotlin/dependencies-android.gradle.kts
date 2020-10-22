@@ -33,4 +33,6 @@ dependencies {
     androidTestImplementation(Dependencies.jUnit5)
     androidTestImplementation(Dependencies.jUnit5Core)
     androidTestRuntimeOnly(Dependencies.jUnit5Runner)
+
+    add(Config.desugaringConfig, Dependencies.desugaring)
 }
