@@ -9,48 +9,48 @@ object Versions {
     val versionCode = (System.getenv("BITRISE_BUILD_NUMBER") ?: "1").toInt()
     const val versionName = "$versionMajor.$versionMinor.$versionPatch"
 
-    const val compileSdk = 29
+    const val compileSdk = 30
     const val minSdk = 21
-    const val targetSdk = 29
+    const val targetSdk = 30
 
     // Build plugins
-    const val jUnit5Gradle = "1.5.2.0"
+    const val jUnit5Gradle = "1.6.2.0"
 
     // Kotlin
-    const val kotlin = "1.3.61"
+    const val kotlin = "1.4.10"
     const val kotlinJdk = "8"
-    const val coroutines = "1.3.2"
+    const val coroutines = "1.4.0-M1"
 
     // AndroidX
-    const val core = "1.3.0-alpha01"
-    const val appCompat = "1.2.0-alpha02"
-    const val constraintLayout = "2.0.0-beta4"
-    const val recyclerView = "1.1.0-rc01"
+    const val core = "1.3.2"
+    const val appCompat = "1.2.0"
+    const val constraintLayout = "2.0.2"
+    const val recyclerView = "1.1.0"
     const val cardView = "1.0.0"
 
     // Room
-    const val room = "2.2.3"
+    const val room = "2.2.5"
 
     // Ui
-    const val material = "1.2.0-alpha04"
-    const val lottie = "3.1.0"
+    const val material = "1.2.1"
+    const val lottie = "3.4.4"
 
     // Navigation
-    const val navigation = "2.2.0"
+    const val navigation = "2.3.1"
 
     // Lifecycle
     const val lifecycle = "2.2.0"
 
     // Di
-    const val koin = "2.1.0-alpha-10"
+    const val koin = "2.1.6"
 
     // Networking
-    const val moshi = "1.9.2"
-    const val okHttp = "4.3.1"
-    const val retrofit = "2.7.1"
+    const val moshi = "1.11.0"
+    const val okHttp = "4.9.0"
+    const val retrofit = "2.9.0"
 
     // Debug tools
-    const val leakCanary = "2.1"
+    const val leakCanary = "2.5"
     const val stetho = "1.5.1"
 
     // Permissions
@@ -60,16 +60,16 @@ object Versions {
     const val threeTen = "1.2.1"
 
     // Unit Testing
-    const val jUnit5 = "5.6.0"
+    const val jUnit5 = "5.7.0"
     const val coreTest = "2.1.0"
-    const val mockK = "1.9.3"
+    const val mockK = "1.10.2"
 
     // Instrumentation Testing
-    const val espressoCore = "3.3.0-alpha03"
-    const val testRunner = "1.3.0-alpha03"
+    const val espressoCore = "3.3.0"
+    const val testRunner = "1.3.0"
     const val jUnit5Runner = "1.2.0"
 
     // Quality
-    const val ktlint = "0.36.0"
-    const val gradleVersions = "0.27.0"
+    const val ktlint = "0.39.0"
+    const val gradleVersions = "0.33.0"
 }

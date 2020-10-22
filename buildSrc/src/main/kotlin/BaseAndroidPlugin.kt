@@ -39,9 +39,7 @@ internal fun Project.configureAndroid() = this.extensions.getByType<BaseExtensio
         exclude("META-INF/LICENSE*")
     }
 
-    dataBinding {
-        isEnabled = true
-    }
+    buildFeatures.viewBinding = true
 }
 
 internal fun Project.configureDependencies() {
