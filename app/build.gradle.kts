@@ -4,7 +4,6 @@ plugins {
 }
 
 android {
-
     defaultConfig {
         applicationId = Config.applicationId
     }
@@ -36,7 +35,6 @@ android {
 }
 
 dependencies {
-
     // Project modules
     implementation(project(Modules.domain))
     implementation(project(Modules.data))

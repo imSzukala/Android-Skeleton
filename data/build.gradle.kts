@@ -4,7 +4,6 @@ plugins {
 }
 
 dependencies {
-
     // Project modules
     implementation(project(Modules.domain))
 

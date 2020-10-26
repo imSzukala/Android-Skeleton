@@ -1,5 +1,4 @@
 object Dependencies {
-
     // General
     val jarFiles = mapOf("dir" to "libs", "include" to listOf("*.jar"))
 

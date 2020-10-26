@@ -6,7 +6,6 @@ buildscript {
     repositories {
         google()
         jcenter()
-
     }
 
     dependencies {
@@ -16,7 +15,6 @@ buildscript {
 }
 
 allprojects {
-
     apply {
         from(rootProject.file(Config.ktlintGradle))
     }
@@ -24,7 +22,6 @@ allprojects {
     repositories {
         google()
         jcenter()
-
     }
 }
 

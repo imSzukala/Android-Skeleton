@@ -4,7 +4,6 @@ val androidTestImplementation by configurations
 val androidTestRuntimeOnly by configurations
 
 dependencies {
-
     // Kotlin
     implementation(Dependencies.coroutinesAndroid)
 

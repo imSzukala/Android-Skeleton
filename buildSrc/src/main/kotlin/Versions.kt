@@ -1,5 +1,4 @@
 object Versions {
-
     // App
     private const val versionMajor = 0
     private const val versionMinor = 1
@@ -42,7 +41,7 @@ object Versions {
     const val lifecycle = "2.2.0"
 
     // Di
-    const val koin = "2.1.6"
+    const val koin = "2.2.0-rc-3"
 
     // Networking
     const val moshi = "1.11.0"

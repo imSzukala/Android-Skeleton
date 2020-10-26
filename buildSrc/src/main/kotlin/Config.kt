@@ -1,5 +1,4 @@
 object Config {
-
     // App
     const val applicationId = "com.szukalairena.androidskeleton"
 

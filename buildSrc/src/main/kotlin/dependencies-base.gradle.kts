@@ -3,7 +3,6 @@ val testImplementation by configurations
 val testRuntimeOnly by configurations
 
 dependencies {
-
     // Jar files
     implementation(fileTree(Dependencies.jarFiles))
 
