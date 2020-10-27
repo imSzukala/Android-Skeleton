@@ -10,5 +10,7 @@ java {
 }
 
 dependencies {
-    implementation(Dependencies.moshi)
+    // Project modules
+    implementation(project(Modules.domain))
+    implementation(project(Modules.data))
 }

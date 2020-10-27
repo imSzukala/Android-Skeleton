@@ -1,6 +1,8 @@
 include(
-    "app",
-    "data",
-    "domain",
-    "navigation"
+    ":app",
+    ":data",
+    ":domain",
+    ":navigation",
+    ":network",
+    ":usecases"
 )

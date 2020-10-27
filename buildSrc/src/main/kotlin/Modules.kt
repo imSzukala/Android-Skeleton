@@ -3,4 +3,6 @@ object Modules {
     const val data = ":data"
     const val domain = ":domain"
     const val navigation = ":navigation"
+    const val network = ":network"
+    const val usecases = ":usecases"
 }

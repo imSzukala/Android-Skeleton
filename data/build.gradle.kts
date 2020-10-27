@@ -1,28 +1,18 @@
 plugins {
-    id(Plugins.androidLibrary)
-    id(Plugins.baseAndroidPlugin)
+    `java-library`
+    kotlin("jvm")
+    id(Plugins.baseDependencies)
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
 }
 
 dependencies {
     // Project modules
     implementation(project(Modules.domain))
 
-    // Networking
-    implementation(Dependencies.moshi)
-    kapt(Dependencies.moshiKotlinCodeGen)
-    implementation(Dependencies.okHttp)
-    implementation(Dependencies.okHttpLogger)
-    implementation(Dependencies.retrofit)
-    implementation(Dependencies.retrofitMoshi)
-
-    // Room
-    implementation(Dependencies.room)
-    kapt(Dependencies.roomCompiler)
-    implementation(Dependencies.roomKtx)
-
-    // Debug tools
-    implementation(Dependencies.stethoOkHttp)
-
-    // Unit Testing
-    testImplementation(Dependencies.roomTest)
+    // Di
+    implementation(Dependencies.koinAndroid)
 }

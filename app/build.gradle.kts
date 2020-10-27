@@ -36,8 +36,9 @@ android {
 
 dependencies {
     // Project modules
-    implementation(project(Modules.domain))
     implementation(project(Modules.data))
+    implementation(project(Modules.network))
+    implementation(project(Modules.usecases))
 
     // Di
     implementation(Dependencies.koinAndroid)

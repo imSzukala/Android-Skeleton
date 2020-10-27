@@ -3,16 +3,17 @@ import org.gradle.api.JavaVersion
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.getByType
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 class BaseAndroidPlugin : Plugin<Project> {
     override fun apply(project: Project) {
         project.configurePlugins()
-        project.configureAndroid()
+        project.configureAndroid(project)
         project.configureDependencies()
     }
 }
 
-internal fun Project.configureAndroid() = this.extensions.getByType<BaseExtension>().run {
+internal fun Project.configureAndroid(project: Project) = this.extensions.getByType<BaseExtension>().run {
     compileSdkVersion(Versions.compileSdk)
 
     defaultConfig {
@@ -34,6 +35,14 @@ internal fun Project.configureAndroid() = this.extensions.getByType<BaseExtensio
         isCoreLibraryDesugaringEnabled = true
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    with(project) {
+        tasks.withType(KotlinCompile::class.java).configureEach {
+            kotlinOptions {
+                jvmTarget = JavaVersion.VERSION_1_8.toString()
+            }
+        }
     }
 
     packagingOptions {
