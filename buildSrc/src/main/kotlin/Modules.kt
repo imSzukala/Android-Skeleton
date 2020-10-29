@@ -1,8 +1,18 @@
 object Modules {
-    const val app = ":app"
-    const val data = ":data"
+    // Domain (abstraction, model)
     const val domain = ":domain"
-    const val navigation = ":navigation"
-    const val network = ":network"
+
+    // Data (repositories)
+    const val data = ":data"
+
+    // Framework (network, database)
+    const val network = ":framework:network"
+
+    // Use cases
     const val usecases = ":usecases"
+
+    // Ui
+    const val main = ":ui:main"
+    const val base = ":ui:base"
+    const val navigation = ":ui:navigation"
 }

@@ -8,6 +8,7 @@ import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
 
+@Suppress("UNUSED")
 class SkeletonApplication : Application() {
 
     override fun onCreate() {

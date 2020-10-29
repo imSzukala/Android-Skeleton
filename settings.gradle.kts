@@ -2,7 +2,9 @@ include(
     ":app",
     ":data",
     ":domain",
-    ":navigation",
-    ":network",
-    ":usecases"
+    ":framework:network",
+    ":usecases",
+    ":ui:base",
+    ":ui:main",
+    ":ui:navigation"
 )
