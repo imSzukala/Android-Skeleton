@@ -2,4 +2,6 @@
 
     <string name="app_name">Android Skeleton</string>
 
+    <string name="nav_screen_messages">Messages</string>
+
 </resources>

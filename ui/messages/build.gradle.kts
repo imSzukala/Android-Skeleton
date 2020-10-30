@@ -8,4 +8,5 @@ dependencies {
     implementation(project(Modules.usecases))
     implementation(project(Modules.base))
     implementation(project(Modules.navigation))
+    implementation(project(Modules.domain))
 }

@@ -6,5 +6,6 @@ include(
     ":usecases",
     ":ui:base",
     ":ui:main",
-    ":ui:navigation"
+    ":ui:navigation",
+    ":ui:messages"
 )

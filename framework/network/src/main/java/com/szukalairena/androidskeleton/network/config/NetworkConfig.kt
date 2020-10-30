@@ -24,6 +24,7 @@ internal fun provideOkHttpClient(httpLoggingInterceptor: HttpLoggingInterceptor)
         .addInterceptor(httpLoggingInterceptor)
         .build()
 
+// TODO Add url
 internal fun provideRetrofit(
     okHttpClient: OkHttpClient,
     moshiConverterFactory: MoshiConverterFactory

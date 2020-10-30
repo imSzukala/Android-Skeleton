@@ -15,4 +15,5 @@ object Modules {
     const val main = ":ui:main"
     const val base = ":ui:base"
     const val navigation = ":ui:navigation"
+    const val messages = ":ui:messages"
 }

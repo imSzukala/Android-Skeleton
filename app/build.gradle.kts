@@ -40,7 +40,7 @@ dependencies {
     implementation(project(Modules.network))
     implementation(project(Modules.usecases))
     implementation(project(Modules.main))
-    implementation(project(Modules.base))
+    implementation(project(Modules.messages))
 
     // Debug tools
     implementation(Dependencies.stetho)

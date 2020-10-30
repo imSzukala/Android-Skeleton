@@ -1,6 +1,6 @@
 package com.szukalairena.androidskeleton.network.di
 
-import com.szukalairena.androidskeleton.domain.source.MessagesSource
+import com.szukalairena.androidskeleton.domain.source.MessagesApiSource
 import com.szukalairena.androidskeleton.network.config.provideHttpLoggingInterceptor
 import com.szukalairena.androidskeleton.network.config.provideMessagesApi
 import com.szukalairena.androidskeleton.network.config.provideMoshi
@@ -17,5 +17,5 @@ val networkModule = module {
     factory { provideMoshiConverterFactory(get()) }
     single { provideRetrofit(get(), get()) }
 
-    single { provideMessagesApi(get()) as MessagesSource }
+    single { provideMessagesApi(get()) as MessagesApiSource }
 }
