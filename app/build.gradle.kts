@@ -40,15 +40,9 @@ dependencies {
     implementation(project(Modules.network))
     implementation(project(Modules.usecases))
     implementation(project(Modules.main))
-
-    // Di
-    implementation(Dependencies.koinAndroid)
-    implementation(Dependencies.koinViewModel)
+    implementation(project(Modules.base))
 
     // Debug tools
     implementation(Dependencies.stetho)
     debugImplementation(Dependencies.leakCanary)
-
-    // Unit Testing
-    testImplementation(Dependencies.koinTest)
 }

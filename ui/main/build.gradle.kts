@@ -6,7 +6,5 @@ plugins {
 dependencies {
     // Project modules
     implementation(project(Modules.usecases))
-
-    // Di
-    implementation(Dependencies.koinAndroid)
+    implementation(project(Modules.base))
 }

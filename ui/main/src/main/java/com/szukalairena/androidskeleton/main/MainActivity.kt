@@ -1,12 +1,9 @@
 package com.szukalairena.androidskeleton.main
 
-import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
+import com.szukalairena.androidskeleton.base.BaseActivity
+import com.szukalairena.androidskeleton.main.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity<ActivityMainBinding>() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-    }
+    override fun setBinding(): ActivityMainBinding = ActivityMainBinding.inflate(layoutInflater)
 }

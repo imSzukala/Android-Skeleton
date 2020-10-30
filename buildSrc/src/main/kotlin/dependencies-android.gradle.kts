@@ -23,8 +23,13 @@ dependencies {
     implementation(Dependencies.viewModel)
     implementation(Dependencies.liveData)
 
+    // Di
+    implementation(Dependencies.koinAndroid)
+    implementation(Dependencies.koinViewModel)
+
     // Unit Testing
     testImplementation(Dependencies.liveDataTest)
+    testImplementation(Dependencies.koinTest)
 
     // Instrumentation Testing
     androidTestImplementation(Dependencies.espressoCore)

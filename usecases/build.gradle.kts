@@ -13,4 +13,7 @@ dependencies {
     // Project modules
     implementation(project(Modules.domain))
     implementation(project(Modules.data))
+
+    // Di
+    implementation(Dependencies.koinAndroid)
 }
