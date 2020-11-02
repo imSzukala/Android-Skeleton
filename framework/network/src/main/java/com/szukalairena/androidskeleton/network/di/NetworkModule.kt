@@ -1,8 +1,8 @@
 package com.szukalairena.androidskeleton.network.di
 
 import com.szukalairena.androidskeleton.domain.source.MessagesApiSource
+import com.szukalairena.androidskeleton.network.api.messages.MessagesApiMock
 import com.szukalairena.androidskeleton.network.config.provideHttpLoggingInterceptor
-import com.szukalairena.androidskeleton.network.config.provideMessagesApi
 import com.szukalairena.androidskeleton.network.config.provideMoshi
 import com.szukalairena.androidskeleton.network.config.provideMoshiConverterFactory
 import com.szukalairena.androidskeleton.network.config.provideOkHttpClient
@@ -17,5 +17,7 @@ val networkModule = module {
     factory { provideMoshiConverterFactory(get()) }
     single { provideRetrofit(get(), get()) }
 
-    single { provideMessagesApi(get()) as MessagesApiSource }
+//    single { provideMessagesApi(get()) as MessagesApiSource }
+    // TODO Remove mocked API
+    single { MessagesApiMock() as MessagesApiSource }
 }

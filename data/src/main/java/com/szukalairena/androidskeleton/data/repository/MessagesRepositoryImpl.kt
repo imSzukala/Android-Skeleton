@@ -6,5 +6,5 @@ import com.szukalairena.androidskeleton.domain.source.MessagesApiSource
 class MessagesRepositoryImpl(
     private val messagesApiSource: MessagesApiSource
 ) : MessagesRepository {
-    override suspend fun getMessages() = messagesApiSource.getMessages()
+    override suspend fun getMessages() = messagesApiSource.getMessages().data
 }

@@ -5,6 +5,7 @@ import org.gradle.api.Project
 import org.gradle.kotlin.dsl.getByType
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
+@Suppress("UNUSED")
 class BaseAndroidPlugin : Plugin<Project> {
     override fun apply(project: Project) {
         project.configurePlugins()

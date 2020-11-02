@@ -29,7 +29,7 @@ internal fun provideRetrofit(
     okHttpClient: OkHttpClient,
     moshiConverterFactory: MoshiConverterFactory
 ) = Retrofit.Builder()
-    .baseUrl("")
+    .baseUrl("https://example.com/")
     .addConverterFactory(moshiConverterFactory)
     .client(okHttpClient)
     .build()
