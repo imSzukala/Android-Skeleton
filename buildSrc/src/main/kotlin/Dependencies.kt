@@ -56,7 +56,7 @@ object Dependencies {
     // Permissions
     const val easyPermissions = "pub.devrel:easypermissions:${Versions.easyPermissions}"
 
-    // Unit Testing
+    // Unit testing
     const val jUnit5 = "org.junit.jupiter:junit-jupiter-api:${Versions.jUnit5}"
     const val jUnit5Params = "org.junit.jupiter:junit-jupiter-params:${Versions.jUnit5}"
     const val jUnit5Engine = "org.junit.jupiter:junit-jupiter-engine:${Versions.jUnit5}"
@@ -65,12 +65,14 @@ object Dependencies {
     const val roomTest = "androidx.room:room-testing:${Versions.room}"
     const val okHttpMock = "com.squareup.okhttp3:mockwebserver:${Versions.okHttp}"
     const val mockK = "io.mockk:mockk:${Versions.mockK}"
+    const val coroutinesTest = "$kotlinX-coroutines-test:${Versions.coroutines}"
 
-    // Instrumentation Testing
+    // Instrumentation testing
     const val espressoCore = "androidx.test.espresso:espresso-core:${Versions.espressoCore}"
     const val testRunner = "androidx.test:runner:${Versions.testRunner}"
     const val jUnit5Core = "de.mannodermaus.junit5:android-test-core:${Versions.jUnit5Runner}"
     const val jUnit5Runner = "de.mannodermaus.junit5:android-test-runner:${Versions.jUnit5Runner}"
+    const val mockKAndroid = "io.mockk:mockk-android:${Versions.mockK}"
 
     // Desugaring
     const val desugaring = "com.android.tools:desugar_jdk_libs:${Versions.desugaring}"

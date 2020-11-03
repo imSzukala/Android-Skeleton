@@ -27,16 +27,17 @@ dependencies {
     implementation(Dependencies.koinAndroid)
     implementation(Dependencies.koinViewModel)
 
-    // Unit Testing
+    // Unit testing
     testImplementation(Dependencies.liveDataTest)
     testImplementation(Dependencies.koinTest)
 
-    // Instrumentation Testing
+    // Instrumentation testing
     androidTestImplementation(Dependencies.espressoCore)
     androidTestImplementation(Dependencies.testRunner)
     androidTestImplementation(Dependencies.jUnit5)
     androidTestImplementation(Dependencies.jUnit5Core)
     androidTestRuntimeOnly(Dependencies.jUnit5Runner)
+    androidTestImplementation(Dependencies.mockKAndroid)
 
     add(Config.desugaringConfig, Dependencies.desugaring)
 }

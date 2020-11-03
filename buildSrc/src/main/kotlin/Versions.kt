@@ -55,12 +55,12 @@ object Versions {
     // Permissions
     const val easyPermissions = "3.0.0"
 
-    // Unit Testing
+    // Unit testing
     const val jUnit5 = "5.7.0"
     const val coreTest = "2.1.0"
     const val mockK = "1.10.2"
 
-    // Instrumentation Testing
+    // Instrumentation testing
     const val espressoCore = "3.3.0"
     const val testRunner = "1.3.0"
     const val jUnit5Runner = "1.2.0"

@@ -16,4 +16,7 @@ dependencies {
 
     // Di
     implementation(Dependencies.koinAndroid)
+
+    // Unit testing
+    testImplementation(Dependencies.koinTest)
 }

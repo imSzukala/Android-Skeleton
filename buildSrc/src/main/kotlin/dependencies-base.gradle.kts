@@ -10,9 +10,10 @@ dependencies {
     implementation(kotlin(Dependencies.stdLib, Versions.kotlin))
     implementation(Dependencies.coroutines)
 
-    // Unit Testing
+    // Unit testing
     testImplementation(Dependencies.jUnit5)
     testImplementation(Dependencies.jUnit5Params)
     testRuntimeOnly(Dependencies.jUnit5Engine)
     testImplementation(Dependencies.mockK)
+    testImplementation(Dependencies.coroutinesTest)
 }

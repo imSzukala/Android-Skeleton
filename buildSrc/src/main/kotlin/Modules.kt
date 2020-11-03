@@ -16,4 +16,8 @@ object Modules {
     const val base = ":ui:base"
     const val navigation = ":ui:navigation"
     const val messages = ":ui:messages"
+
+    // Test
+    const val unittest = ":unittest"
+    const val androidtest = ":androidtest"
 }

@@ -7,5 +7,7 @@ include(
     ":ui:base",
     ":ui:main",
     ":ui:navigation",
-    ":ui:messages"
+    ":ui:messages",
+    ":unittest",
+    ":androidtest"
 )

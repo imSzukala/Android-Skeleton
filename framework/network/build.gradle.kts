@@ -16,7 +16,4 @@ dependencies {
     implementation(Dependencies.okHttpLogger)
     implementation(Dependencies.retrofit)
     implementation(Dependencies.retrofitMoshi)
-
-    // Di
-    implementation(Dependencies.koinAndroid)
 }

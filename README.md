@@ -16,6 +16,9 @@
   - **database**
   - **shared preferences**
   - ...
+- **unittest** - module that contains base unit test utils and extensions
+- **androidtest** - module that contains base unit test utils and extensions that are using Android framework
+
 ## Useful Gradle Tasks:
 - `./gradlew ktlint` - Runs ktlint kotlin code style checker
 - `./gradlew ktlintFormat` - Runs ktlint formatter to format the code based on ktlint coding style
