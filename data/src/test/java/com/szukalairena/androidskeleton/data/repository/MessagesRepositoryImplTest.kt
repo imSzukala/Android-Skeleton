@@ -1,9 +1,9 @@
 package com.szukalairena.androidskeleton.data.repository
 
+import com.szukalairena.androidskeleton.basetest.CoroutinesTestExtension
 import com.szukalairena.androidskeleton.domain.model.DataResponse
 import com.szukalairena.androidskeleton.domain.model.Message
 import com.szukalairena.androidskeleton.domain.source.MessagesApiSource
-import com.szukalairena.androidskeleton.unittest.CoroutinesTestExtension
 import io.mockk.coEvery
 import io.mockk.coVerify
 import io.mockk.impl.annotations.MockK

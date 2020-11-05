@@ -6,6 +6,6 @@ plugins {
 dependencies {
     // Project modules
     implementation(project(Modules.usecases))
-    implementation(project(Modules.base))
+    implementation(project(Modules.design))
     implementation(project(Modules.navigation))
 }

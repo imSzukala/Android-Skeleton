@@ -2,7 +2,7 @@ package com.szukalairena.androidskeleton.messages
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import com.szukalairena.androidskeleton.base.BaseViewHolder
+import com.szukalairena.androidskeleton.design.BaseViewHolder
 import com.szukalairena.androidskeleton.messages.databinding.ItemMessageBinding
 import com.szukalairena.androidskeleton.messages.model.MessageItem
 

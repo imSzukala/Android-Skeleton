@@ -3,7 +3,7 @@ package com.szukalairena.androidskeleton.messages
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
-import com.szukalairena.androidskeleton.base.BaseViewModel
+import com.szukalairena.androidskeleton.design.BaseViewModel
 import com.szukalairena.androidskeleton.domain.model.Message
 import com.szukalairena.androidskeleton.messages.model.MessageItem
 import com.szukalairena.androidskeleton.messages.model.MessagesUiData

@@ -4,7 +4,7 @@
 - **ui** - layer that interacts with the UI
   - **main** - module that contains MainActivity and is the starting point of the app
   - **navigation** - module that contains navigation graph
-  - **base** - module that contains resources, assets, views and base UI classes
+  - **design** - module that contains resources, assets, views and base UI classes
   - **feature 1**
   - **feature 2**
   - ...
@@ -16,8 +16,8 @@
   - **database**
   - **shared preferences**
   - ...
-- **unittest** - module that contains base unit test utils and extensions
-- **androidtest** - module that contains base unit test utils and extensions that are using Android framework
+- **base** - module that contains base classes
+- **basetest** - module that contains base unit test utils and extensions
 
 ## Useful Gradle Tasks:
 - `./gradlew ktlint` - Runs ktlint kotlin code style checker

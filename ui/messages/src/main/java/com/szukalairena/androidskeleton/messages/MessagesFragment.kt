@@ -2,7 +2,7 @@ package com.szukalairena.androidskeleton.messages
 
 import android.os.Bundle
 import android.view.View
-import com.szukalairena.androidskeleton.base.BaseFragment
+import com.szukalairena.androidskeleton.design.BaseFragment
 import com.szukalairena.androidskeleton.messages.databinding.FragmentMessagesBinding
 import org.koin.androidx.viewmodel.ext.android.viewModel
 

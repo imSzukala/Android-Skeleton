@@ -13,11 +13,11 @@ object Modules {
 
     // Ui
     const val main = ":ui:main"
-    const val base = ":ui:base"
+    const val design = ":ui:design"
     const val navigation = ":ui:navigation"
     const val messages = ":ui:messages"
 
-    // Test
-    const val unittest = ":unittest"
-    const val androidtest = ":androidtest"
+    // Base
+    const val base = ":base"
+    const val basetest = ":basetest"
 }

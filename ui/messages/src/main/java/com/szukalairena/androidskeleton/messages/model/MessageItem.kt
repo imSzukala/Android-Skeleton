@@ -1,6 +1,6 @@
 package com.szukalairena.androidskeleton.messages.model
 
-import com.szukalairena.androidskeleton.base.util.UniqueId
+import com.szukalairena.androidskeleton.design.util.UniqueId
 
 data class MessageItem(
     private val id: Long,

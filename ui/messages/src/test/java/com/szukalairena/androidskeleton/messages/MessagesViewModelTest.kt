@@ -1,9 +1,9 @@
 package com.szukalairena.androidskeleton.messages
 
 import androidx.lifecycle.Observer
-import com.szukalairena.androidskeleton.androidtest.InstantExecutorExtension
+import com.szukalairena.androidskeleton.basetest.CoroutinesTestExtension
+import com.szukalairena.androidskeleton.basetest.InstantExecutorExtension
 import com.szukalairena.androidskeleton.messages.model.MessagesUiData
-import com.szukalairena.androidskeleton.unittest.CoroutinesTestExtension
 import com.szukalairena.androidskeleton.usecases.messages.MessagesUseCase
 import com.szukalairena.androidskeleton.usecases.messages.model.MessagesData
 import io.mockk.coEvery

@@ -1,12 +1,6 @@
 plugins {
-    `java-library`
-    kotlin("jvm")
-    id(Plugins.baseDependencies)
-}
-
-java {
-    sourceCompatibility = JavaVersion.VERSION_1_8
-    targetCompatibility = JavaVersion.VERSION_1_8
+    id(Plugins.androidLibrary)
+    id(Plugins.baseAndroidPlugin)
 }
 
 dependencies {
@@ -18,5 +12,5 @@ dependencies {
 
     // Unit testing
     testImplementation(Dependencies.koinTest)
-    testImplementation(project(Modules.unittest))
+    testImplementation(project(Modules.basetest))
 }

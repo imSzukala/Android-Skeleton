@@ -4,10 +4,10 @@ include(
     ":domain",
     ":framework:network",
     ":usecases",
-    ":ui:base",
+    ":ui:design",
     ":ui:main",
     ":ui:navigation",
     ":ui:messages",
-    ":unittest",
-    ":androidtest"
+    ":base",
+    ":basetest"
 )
