@@ -23,3 +23,5 @@
 - `./gradlew ktlint` - Runs ktlint kotlin code style checker
 - `./gradlew ktlintFormat` - Runs ktlint formatter to format the code based on ktlint coding style
 - `./gradlew dependencyUpdates` - Checks the current used dependencies and their latest versions
+- `./gradlew test` - Runs all tests
+- `./gradlew generateMergedJacocoReport` - Generates merged Jacoco report

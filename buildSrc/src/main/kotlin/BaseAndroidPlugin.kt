@@ -64,4 +64,5 @@ internal fun Project.configurePlugins() {
     plugins.apply(Plugins.kapt)
     plugins.apply(Plugins.jUnit5)
     plugins.apply(Plugins.safeArgs)
+    plugins.apply(Plugins.jacoco)
 }

@@ -25,4 +25,5 @@ object Plugins {
     // Quality
     const val ktlint = "com.pinterest:ktlint:${Versions.ktlint}"
     const val gradleVersions = "com.github.ben-manes.versions"
+    const val jacoco = "jacoco"
 }
