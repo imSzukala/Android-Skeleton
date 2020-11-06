@@ -26,13 +26,14 @@ object Versions {
     const val constraintLayout = "2.0.2"
     const val recyclerView = "1.1.0"
     const val cardView = "1.0.0"
-
-    // Room
-    const val room = "2.2.5"
+    const val fragment = "1.2.5"
 
     // Ui
     const val material = "1.2.1"
     const val lottie = "3.4.4"
+
+    // Room
+    const val room = "2.2.5"
 
     // Navigation
     const val navigation = "2.3.1"

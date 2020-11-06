@@ -2,6 +2,13 @@ val implementation by configurations
 val testImplementation by configurations
 val testRuntimeOnly by configurations
 
+/**
+ * Base dependencies for all modules.
+ * Contains:
+ * - Base Kotlin dependencies
+ * - Coroutines
+ * - Base unit test dependencies
+ */
 dependencies {
     // Jar files
     implementation(fileTree(Dependencies.jarFiles))

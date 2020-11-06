@@ -14,6 +14,7 @@ object Dependencies {
     const val constraintLayout = "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
     const val recyclerView = "androidx.recyclerview:recyclerview:${Versions.recyclerView}"
     const val cardView = "androidx.cardview:cardview:${Versions.cardView}"
+    const val fragment = "androidx.fragment:fragment-ktx:${Versions.fragment}"
 
     // Ui
     const val material = "com.google.android.material:material:${Versions.material}"

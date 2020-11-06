@@ -55,7 +55,7 @@ internal fun Project.configureAndroid(project: Project) = this.extensions.getByT
 
 internal fun Project.configureDependencies() {
     plugins.apply(Plugins.baseDependencies)
-    plugins.apply(Plugins.androidDependencies)
+    plugins.apply(Plugins.baseAndroidDependencies)
 }
 
 internal fun Project.configurePlugins() {

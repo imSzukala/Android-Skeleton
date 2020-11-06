@@ -7,7 +7,8 @@ object Plugins {
     const val kapt = "kotlin-kapt"
 
     const val baseAndroidPlugin = "com.szukalairena.androidskeleton.baseandroidplugin"
-    const val androidDependencies = "dependencies-android"
+    const val baseAndroidDependencies = "dependencies-android-base"
+    const val uiAndroidDependencies = "dependencies-android-ui"
     const val baseDependencies = "dependencies-base"
 
     // Navigation
